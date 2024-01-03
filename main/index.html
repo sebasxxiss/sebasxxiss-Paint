@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Paint</title>
+</head>
+<body>
+    <div class="container">
+        <canvas id="canvas" class="MouseCanvas" height="600px" width="600px"></canvas>
+    </div>
+    <div class="toolBar">
+        <section class="buttonsSection">
+            <nav class="File"><span>File</span>
+                <ul>
+                    <li><div class="btn" id="btnClear">Delete</div></li>
+                    <li><div class="btn" id="btnSave">Save</div></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="colorsSection">
+            <div class="colorTools" id="Sizes">
+                <img src="../src/sizes.svg" width="50px" height="30px" alt="sizes" draggable="false">
+                <span>sizes</span>
+                <ul class="options">
+                    <li><div class="btn" id="s4">4</div></li>
+                    <li><div class="btn" id="s8">8</div></li>
+                    <li><div class="btn" id="s12">12</div></li>
+                    <li><div class="btn" id="s16">16</div></li>
+                    <li><div class="btn" id="sChoose">Choose size...
+                        <input type="range" name="Size" id="lineSize" value="8"><span id="sizeValue">8</span>
+                    </div></li>
+                </ul>
+            </div>
+            <div class="colorTools" id="mainColor">
+                <img src="../src/brush.svg" width="50px" height="30px" alt="brush" draggable="false">
+                <span>paint</span>
+            </div>
+            <div class="colorTools" id="eraserColor">
+                <img src="../src/eraser.svg" width="50px"height="30px" alt="eraser" draggable="false">
+                <span>erase</span>
+            </div>
+            <div class="colorSection">
+                <div id="colorSelector">
+                    <div>Select color</div>
+                    <div id="colorGradient"></div>
+                    <div id="colorMenu">
+                        <div id="colorRGB">
+                            <div class="cursor"></div>
+                            <div id="colorBW"></div>
+                        </div>
+                        <div>R:
+                            <input class="R" type="text" placeholder="255">
+                        </div>
+                        <div>G:
+                            <input class="G" type="text" placeholder="0">
+                        </div>
+                        <div>B:
+                            <input class="B" type="text" placeholder="0"> 
+                        </div>
+                        <input type="range" name="" id="colorSelectorRange" max="1530" value="0" step="1">
+                    </div>
+                </div>
+                <div class="secondaryColors">
+                    <button class="colorS" id="red"></button>
+                    <button class="colorS" id="green"></button>
+                    <button class="colorS" id="blue"></button>
+                    <button class="colorS" id="yellow"></button>
+                    <button class="colorS" id="cyan"></button>
+                    <button class="colorS" id="magenta"></button>
+                    <button class="colorS" id="black"></button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="DrawMannager.js" type="module"></script>
+<script src="buttonsMannager.js" type="module"></script>
+<script src="buttonsMannager.js" type="module"></script>
+<script src="colorCursor.js" type="module"></script>
+</html>

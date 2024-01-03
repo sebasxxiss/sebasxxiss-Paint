@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.MouseCanvas{
+    position: absolute;
+    display: block;
+    border: 2px solid black;
+    z-index: -1;
+}
+.container{
+    position: absolute;
+    margin-top: 100px;
+}
+.btn{
+    background-color: lightgray;
+    z-index: 100;
+    display: none;
+    border: 1px solid gray;
+    user-select: none;
+}
+.toolBar{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    min-height: 100px;
+}
+.colorTools:hover .btn{
+    display: block;
+}
+.File:hover .btn{
+    display: block;
+}
+.colorsSection{
+    margin-top: 30px;
+    display: flex;
+    gap: 5px;
+}
+.secondaryColors{
+    display: flex;
+    flex-wrap: wrap;
+    height: 40px;
+    gap: 3px;
+    margin-bottom: -6px;
+}
+
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+.colorS{
+    border: 2px solid black;
+    width: 25px;
+    height: 25px;
+}
+.colorS:hover{
+    border: 3px solid blue;
+}
+.colorTools{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+span{
+    user-select: none;
+}
+.File{
+    background-color: lightgray;
+    width: 7vw;
+    display: block;
+}
+ul>li{
+    list-style: none;
+    z-index: 100;
+}
+.colorTools:hover{
+    border: 2px solid blue;
+}
+.colorTools:active{
+    border: 2px solid blue;
+}
+.File .btn{
+    position: relative;
+    min-width: 40px;
+}
+.btn:hover{
+    background-color: rgb(66, 118, 212);
+    color: white;
+}
+#colorSelector{
+    user-select: none;
+    min-width: 75px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: lightgray;
+}
+#colorSelector:hover{
+    border: 2px solid blue;
+}
+#colorGradient{
+    background: linear-gradient(90deg,rgba(255,0,0,1) 0%, rgba(255,125,0,1) 14.2857142857%, rgba(255,255,0,1) 28.5714285714%, rgba(0,255,6,1) 42.85714285715%, rgba(0,247,255,1) 57.1428571429%, rgba(15,0,255,1) 71.4285714286%, rgba(255,0,226,1) 85.7142857143%, rgba(255,0,0,1) 100%);
+    height: 25px;
+}
+.colorSection{
+    display: flex;
+    flex-direction: row;
+     gap: 3px;
+}
+#colorMenu{
+    display: none;
+    border: 2px solid gray;
+    background-color: lightgray;
+}
+#colorBW{
+    height: 75px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 0, 0, 0) 100%),
+    linear-gradient(to right,rgba(255, 255, 255, 1),rgba(255, 0, 0, 0) 100%);
+    position: relative;
+    z-index: 20;
+}
+#colorRGB{
+    width: 100%;
+    height: 75px;
+    position: relative;
+}
+.cursor{
+    border: 2px solid black;
+    border-radius: 30px;
+    position: absolute;
+    width: 7.5px;
+    height: 7.5px;
+    z-index: 500;
+}
+
