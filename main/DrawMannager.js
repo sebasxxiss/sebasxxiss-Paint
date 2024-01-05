@@ -1,5 +1,6 @@
-import { color } from "./colorsMannager.js"
+import { color ,colorBW} from "./colorsMannager.js"
 import { lineWidth } from "./buttonsMannager.js"
+import { colorbwCoords } from "./colorCursor.js"
 
 const toolBar = document.querySelector(".toolBar")
 const canvas=document.querySelector(".MouseCanvas")
